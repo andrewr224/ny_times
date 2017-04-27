@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,700,800,800i,900');
+
+/* CSS Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+  /* Custom Styles */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Libre Franklin', georgia, 'Times New Roman';
+}
+
+.page {
+  box-shadow: -3px 0 10px #DCDCDC;
+  margin-left: 2vw;
+}
+  /* Icons */
+
+.icon {
+  background-image: url(https://a1.nyt.com/assets/article/20170424-182737/images/sprite/sprite-no-repeat.svg);
+  display: inline-block;
+  height: 16px;
+  vertical-align: middle;
+  width: 16px;
+}
+
+.icon-bars {
+  background-position: -444px -215px;
+}
+
+.icon-home {
+  background-position: -51px -280px;
+}
+
+.icon-search {
+  background-position: -357px -215px;
+}
+
+.icon-menu {
+  background-position: -494px -215px;
+}
+
+  /* Navigation */
+
+nav {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  height: 48px;
+  font-size: 11px;
+  font-weight: 700;
+  left: 2vw;
+  padding-top: 7.5px;
+  position: fixed;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+button {
+  border-radius: 3px;
+  height: 30px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-left {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+.nav-left button {
+  background-color: white;
+  border: 1px solid #DCDCDC;
+  box-shadow: 0 3px 5px #DCDCDC;
+  margin-left: -14px;
+  padding: 7px 11px;
+}
+
+#home {
+  margin: 0 20px;
+}
+
+.nav-middle {
+  display: inline-block;
+  padding-left: 18px;
+  padding-top: 4px;
+  vertical-align: top;
+  width: 40%;
+}
+
+.nav-middle img {
+  height: 26px;
+}
+
+.nav-right {
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 19%;
+}
+
+.nav-right button:first-child {
+  background-color: #6288a5;
+  border: 1px solid #4d7b9f;
+  color: white;
+  padding: 7px;
+  margin-right: 10px;
+}
+
+.nav-right button:last-child {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 0;
+}
+
+.news-top {
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  height: 130px;
+  font-family: georgia, 'Times New Roman';
+  font-size: 14px;
+  padding: 51px 10px 10px 10px;
+  overflow: hidden;
+}
+
+.news-container {
+  height: 75px;
+  width: 2200px;
+}
+
+.news-item {
+  border-right: 1px solid #ccc;
+  display: inline-block;
+  height: 75px;
+  margin-right: 5px;
+  padding-top: 4px;
+  vertical-align: top;
+  width: 240px;
+}
+
+.news-item img {
+  height: 65px;
+  float: left;
+  margin-right: 10px;
+  width: 65px;
+}
+
+.news-item h5 {
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+  /* Article */
+
+section {
+  background-color: lightblue;
+}
+
+header {
+  background-color: Aqua;
+  height: 700px;
+}
+
+article {
+  font-family: georgia, 'Times New Roman';
+}
+
+article,
+.more {
+  background-color: Bisque;
+  height: 700px;
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+aside {
+  background-color: Azure;
+  height: 300px;
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.explain {
+  background-color: CadetBlue;
+  height: 400px;
+}
+
+  /* Footer */
+
+footer {
+  background-color: Crimson;
+  height: 300px;
+}
